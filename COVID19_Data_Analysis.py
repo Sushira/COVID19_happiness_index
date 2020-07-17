@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 17 19:27:37 2020
-
-@author: Sushir
-"""
 
 import pandas as pd
 import numpy as np
@@ -38,7 +33,8 @@ c = list(covid_agg.index)
 max_infect = []
 for i in c :
     max_infect.append(covid_agg.loc[i].diff().max())
-#max_infect
+max_infect
+
 covid_agg["Max_infection_rate"] = max_infect
 #covid_agg.head()
 
